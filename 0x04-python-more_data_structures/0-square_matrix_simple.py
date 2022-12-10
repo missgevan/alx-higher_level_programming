@@ -2,6 +2,5 @@
 def square_matrix_simple(matrix=[]):
     new_matrix = []
     for row in matrix:
-        result_matrix = [x * x for x in row]
-        new_matrix.append(result_matrix)
-        return new_matrix
+        new_matrix.append([list(map(lambda x: x * x))])
+    return new_matrix
